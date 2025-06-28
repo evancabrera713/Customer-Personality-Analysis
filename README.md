@@ -16,6 +16,7 @@ Customers in this group have higher incomes, fewer children, and significantly h
 ### Cluster 2: Budget-Conscious and Family Oriented Shoppers
 Customers in this group have lower incomes, more children, and slightly higher education. They spend less overall and are more responsive to value-driven offers. These customers represent an opportunity for discount campaigns, family bundles, and practical product messaging. 
 
+
 ## Background and Introduction
 
 Businesses serve a large and varied demographic of customers. As data science expands, more information is being collected by businesses about customers every day. To maintain customer happiness and increase profitability, it is useful to provide targeted advertisements to customers. Targeted advertisements allow customers to not have their time wasted, and for businesses to not waste money on meaningless promotions. The decision about how to best advertise to customers can be complicated, but being able to identify specific groups and needs is a good first step.
