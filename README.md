@@ -41,32 +41,7 @@ Instead, we used the Silhouette Score, a criterion which takes on a value betwee
 
 In these two clusters, the first cluster contained 864 observations and the second cluster contained 1344 observations. To investigate what separates these two clusters, we examined the criteria used by the K-Means algorithm to find the difference between these two groups. To do this, we examined the differences between the means of each variable between the two clusters. In order to quantify these differences, we conducted a t-test using a significance level of 0.05/20 (the number of predictors) = 0.0025 testing the differences between the means of each predictor (See Appendix A). Since the t-test only works for continuous variables, we used a Chi-Squared Test of Homogeneity for the categorical variables in our dataset. These tests showed that income, children, amount spent on meat in the last 2 years, amount spent on fish in the last 2 years, number of purchases made using a catalog, and total amount spent differed significantly between the two clusters. 
 
-Feature
-Cluster 1
-Cluster 2 
-Income
-Higher 
-Lower 
-Children in Household
-Fewer
-More
-Total Spending
-Higher overall
-Lower overall
-Spending - Meats & Fish
-Higher
-Lower
-Catalog Purchases 
-More frequent
-Less frequent
-Education Level
-Slightly lower
-Slightly higher
-Marital Status
-More married/stable
-More single/separated
-
-
+![Image](https://github.com/user-attachments/assets/3c558f2b-7abb-485f-9e6f-f0b7f39f806c)
 
 ### MANOVA
 In order to quantify the effect of education and children on income and spending, a two-way MANOVA (Multivariate Analysis of Variance) was performed. The customers were grouped according to education level (high school, college degree, or postgraduate degree), as well as whether they have any children at home, for a total of six groups. The response variable was a vector containing yearly income and total spent in the store in the last two years. Additionally, a post-hoc Tukey's HSD test was performed to test the individual interactions between the grouping variables.
