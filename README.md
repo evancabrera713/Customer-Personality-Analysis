@@ -10,10 +10,10 @@ Dataset can be found here: https://www.kaggle.com/datasets/imakash3011/customer-
 
 This project applies clustering techniques to segment customers based on demographics and purchasing behavior based on this dataset. By using variables such as income, education, number of children, and spending across different product categories, two distinct customer groups were identified. 
 
-Cluster 1: High-Value Shoppers
+### Cluster 1: High-Value Shoppers
 Customers in this group have higher incomes, fewer children, and significantly higher spending, particularly on meats and fish. They are more likely to make catalog purchases and represent an opportunity for premium product marketing and loyalty programs.
 
-Cluster 2: Budget-Conscious and Family Oriented Shoppers
+### Cluster 2: Budget-Conscious and Family Oriented Shoppers
 Customers in this group have lower incomes, more children, and slightly higher education. They spend less overall and are more responsive to value-driven offers. These customers represent an opportunity for discount campaigns, family bundles, and practical product messaging. 
 
 
