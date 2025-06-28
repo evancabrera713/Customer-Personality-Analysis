@@ -16,6 +16,7 @@ Customers in this group have higher incomes, fewer children, and significantly h
 ### Cluster 2: Budget-Conscious and Family Oriented Shoppers
 Customers in this group have lower incomes, more children, and slightly higher education. They spend less overall and are more responsive to value-driven offers. These customers represent an opportunity for discount campaigns, family bundles, and practical product messaging. 
 
+[Cluster Table](ClusterTable.jpg)
 
 ## Background and Introduction
 
