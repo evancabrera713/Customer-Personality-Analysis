@@ -6,7 +6,7 @@ Dataset can be found here: https://www.kaggle.com/datasets/imakash3011/customer-
 - Report.pdf contains results of the project as well as actionable insights, the report will be posted down below as well.
 - iPynb contains the python code used and explained for this project. 
 
-## Executive Summary / Key Insights
+## I. Executive Summary / Key Insights
 
 This project applies clustering techniques to segment customers based on demographics and purchasing behavior based on this dataset. By using variables such as income, education, number of children, and spending across different product categories, two distinct customer groups were identified. 
 
@@ -18,12 +18,12 @@ Customers in this group have lower incomes, more children, and slightly higher e
 
 
 
-## Background and Introduction
+## II. Background and Introduction
 
 Businesses serve a large and varied demographic of customers. As data science expands, more information is being collected by businesses about customers every day. To maintain customer happiness and increase profitability, it is useful to provide targeted advertisements to customers. Targeted advertisements allow customers to not have their time wasted, and for businesses to not waste money on meaningless promotions. The decision about how to best advertise to customers can be complicated, but being able to identify specific groups and needs is a good first step.
 This leads to our main research question of interest: How can customer personalities be used to divide customers into groups? If there are no prior assumptions being made about group numbers or structures, an excellent technique to answer this question is via Cluster Analysis. Cluster analysis is a form of unsupervised classification, in which variables are grouped into clusters based upon similarities or distances. Furthermore through our process of data exploration we developed a secondary research question: What is the impact of education and children on the total purchase amount and income?
 
-## Data and Exploratory Analysis
+## III. Data and Exploratory Analysis
 
 To answer our research question, we utilized the Customer Personality Analysis dataset found on Kaggle.com. This dataset contains information about 2240 customers. Each row of data includes several types of information including demographic information, purchase history, purchase format, and how the customer has responded to marketing outreach. 
 
@@ -32,7 +32,7 @@ Our initial exploration found that the data was composed of 2240 customers acros
 Age and “time as customer” are provided in the dataset as dates, so they have been given an appropriately calculated value in years. Two additional variables were calculated due to suspected usefulness: total spent by a customer, and total number of advertisements responded to. The final part of our data exploration included constructing a correlation plot of our numeric variables to receive a general understanding of how our data might be related (see Appendix A).
 
 
-## Model and Results
+## IV. Model and Results
 
 ### Cluster Analysis
 Clustering is an unsupervised learning technique which classifies observations of an unlabeled dataset into groups. There are several different types of Clustering algorithms which all use different distance metrics. For our specific dataset we used K-Means clustering, which is a non-hierarchical clustering method that uses the smallest centroid distance to classify the observation. A notable feature of K-Means clustering is that it is very sensitive to the number of clusters chosen.
@@ -53,7 +53,7 @@ When testing for the multivariate normality assumption of the MANOVA model, it w
 Both income and total spent were shown to be significantly affected by both education and presence of children (p < 0.0001, see Appendix A). Additionally, most interactions between variables were significant in the post-hoc tests. For income, insignificant interactions include the presence of children for those with a high school or college education, and the difference between a graduate and postgraduate college degree for customers with and without children. For total spent, insignificant interactions include the presence of children for those with a high school or college education, the difference between those without children and a high school education and those with children and a postgraduate degree, and the difference between a graduate and postgraduate college degree for customers with and without children (see Appendix A). All other differences between groups were significant.
 
 
-## Discussion and Conclusion
+## V. Discussion and Conclusion
 After cleaning the data and exploring the surface level associations, we used a K-means clustering method to group customers into clusters. The number of clusters to be used within our K-means method was specifically picked following consideration of the Elbow Method and Silhouette Score for the number of clusters to use. Comparing the column means between our clusters we were able to eliminate insignificant variables from the clusters and develop a characterization of the clusters.
 Considering the significance of children in the cluster, and our previous expectation of the importance of education, we decided to quantify the influence of these two variables on total amount spent and income. Our multivariate normality assumptions failed, deeming our MANOVA findings unreliable. However, we were able to determine that income and total spending were shown to be significantly affected by the presence of children and education level.
 In conclusion, we have found that our multivariate statistical methods of Clustering and MANOVA to be useful in the analysis of customer data. These methods were able to break customers into groups, and further define relationships and interactions between variables. The results from using either of these methods could potentially help businesses to better provide services to customers based upon customer shopping personalities.
